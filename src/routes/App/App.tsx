@@ -46,8 +46,6 @@ function App(): JSX.Element {
         <h2 className="is-size-4 is-color-secondary is-italic is-light-weight">
           {bride}
           {' '}
-          {lastName1}
-          {' '}
           and
           {' '}
           {groom}
