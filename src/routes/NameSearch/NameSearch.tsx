@@ -81,7 +81,7 @@ function NameSearch() {
         className="flex col xs-x-center xs-y-margin-between-4"
         onSubmit={(event) => onSubmit(event, hooks, service)}
       >
-        <p className="is-size-5 is-color-secondary">Enter your first or last name to get your table number!</p>
+        <p className="is-size-5 is-color-secondary">Enter your name to get your table number!</p>
         <input
           className="name-input
           is-size-4
@@ -90,9 +90,9 @@ function NameSearch() {
           type="text"
           value={state.name}
           onChange={(event) => setState({...state, name: event.target.value})}
-          placeholder="Name"
+          placeholder="First name or Last name"
         />
-        <button type="submit" className="name-submit is-size-5 xs-x-self-center">Search</button>
+        <button type="submit" className="name-submit is-size-5 xs-x-self-center">🔍Search</button>
         {!state.initial && Object.keys(state.tables).length !== 0 ? (
           <button
             type="button"
