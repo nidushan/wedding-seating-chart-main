@@ -1,0 +1,33 @@
+@import '../../../Theme.scss';
+
+.loading {
+    display: inline-block;
+    position: relative;
+
+    div {
+        position: absolute;
+        border-style: solid;
+        border-color: theme-color-var(primary);
+        border-radius: 50%;
+        animation-name: loading-ripple;
+        animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1);
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes loading-ripple {
+    0% {
+        top: 45%;
+        left: 45%;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+        opacity: 0;
+    }
+}

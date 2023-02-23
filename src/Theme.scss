@@ -1,0 +1,223 @@
+// Number of columns in every flexbox row.
+$grid-columns: 12;
+
+// Themes, or color schemes, for the app.
+$themes: (
+    dark: (
+        base: #000000,
+        primary: #ffffff,
+        secondary: #adadad,
+        tertiary: #414141,
+        selection: #636363,
+    ),
+    light: (
+        base: #ffffff,
+        primary: #000000,
+        secondary: #575757,
+        tertiary: #cccccc,
+        selection: #d1d1d1,
+    ),
+);
+
+// Function for getting a theme color.
+@function theme-color($theme, $color) {
+    @return map-get(map-get($themes, $theme), $color);
+}
+
+// Function for getting a theme color CSS variable.
+@function theme-color-var($color) {
+    @return var(--theme-color-#{$color});
+}
+
+// Mixin for setting all theme colors as CSS variables.
+@mixin set-theme-vars($theme) {
+    @each $name, $color in map-get($themes, $theme) {
+        --theme-color-#{$name}: #{$color};
+    }
+}
+
+// Font weights.
+$font-weights: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+);
+
+// Function for getting a font weight.
+@function font-weight($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+// Font sizes.
+$font-sizes: (
+    1: (6rem, 5rem),
+    2: (3.5rem, 2.8125rem),
+    3: (2.8125rem, 2.125rem),
+    4: (2.125rem, 1.5rem),
+    5: (1.5rem, 1.25rem),
+    6: (1.25rem, 1rem),
+    7: (1rem, 0.875rem),
+    8: (0.875rem, 0.75rem),
+    9: (0.75rem, 0.625rem)
+);
+
+// Function for getting a font size. Use font-size mixin instead.
+@function get-font-size($i) {
+    @return map-get($font-sizes, $i);
+}
+
+// Mixin for using the given font size.
+@mixin font-size($i) {
+    $sizes: map-get($font-sizes, $i);
+
+    $size: nth($sizes, 1);
+    $mobile: nth($sizes, 2);
+
+    font-size: $size;
+    @include for-mobile {
+        font-size: $mobile;
+    }
+}
+
+// Minimum width for the given screen size.
+$breakpoints-min: (
+    xs: 0px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+// Maximum width for the given screen size.
+$breakpoints-max: (
+    xs: 0px,
+    sm: 575.98px,
+    md: 767.98px,
+    lg: 991.98px,
+    xl: 1199.98px
+);
+
+// Mixin to apply styles to the given viewport and larger.
+@mixin for-viewport-up($size) {
+    // Small devices (landscape phones)
+    @if ($size == sm) {
+        @media all and (min-width: map-get($breakpoints-min, sm)) {
+            @content;
+        }
+    }
+    // Medium devices (tablets).
+    @else if ($size == md) {
+        @media all and (min-width: map-get($breakpoints-min, md)) {
+            @content;
+        }
+    }
+    // Large devices (desktops).
+    @else if ($size == lg) {
+        @media all and (min-width: map-get($breakpoints-min, lg)) {
+            @content;
+        }
+    }
+    // Extra large devices (large desktops).
+    @else if ($size == xl) {
+        @media all and (min-width: map-get($breakpoints-min, xl)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+// Mixin to apply styles to the given viewport and smaller.
+@mixin for-viewport-down($size) {
+    // Extra small devices (portrait phones).
+    @if ($size == xs) {
+        @media all and (max-width: map-get($breakpoints-max, sm)) {
+            @content;
+        }
+    }
+    // Small devices (landscape phones).
+    @else if ($size == sm) {
+        @media all and (max-width: map-get($breakpoints-max, md)) {
+            @content;
+        }
+    }
+    // Medium devices (tablets).
+    @else if ($size == md) {
+        @media all and (max-width: map-get($breakpoints-max, lg)) {
+            @content;
+        }
+    }
+    // Large devices (desktops).
+    @else if ($size == lg) {
+        @media all and (max-width: map-get($breakpoints-max, xl)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+// Mixin to apply styles only to the given viewport.
+@mixin for-viewport-only($size) {
+    // Extra small devices (portrait phones).
+    @if ($size == xs) {
+        @media all and (min-width: map-get($breakpoints-min, xs)) and (max-width: map-get($breakpoints-max, sm)) {
+            @content;
+        }
+    }
+    // Small devices (landscape phones).
+    @if ($size == sm) {
+        @media all and (min-width: map-get($breakpoints-min, sm)) and (max-width: map-get($breakpoints-max, md)) {
+            @content;
+        }
+    }
+    // Medium devices (tablets).
+    @else if ($size == md) {
+        @media all and (min-width: map-get($breakpoints-min, md)) and (max-width: map-get($breakpoints-max, lg)) {
+            @content;
+        }
+    }
+    // Large devices (desktops).
+    @else if ($size == lg) {
+        @media all and (min-width: map-get($breakpoint-mins, lg)) and (max-width: map-get($breakpoints-max, xl)) {
+            @content;
+        }
+    }
+    // Extra large devices (large desktops).
+    @else if ($size == xl) {
+        @media all and (min-width: map-get($breakpoints-min, xl)) {
+            @content;
+        }
+    }
+}
+
+// Mixin to apply styles to mobile (in general).
+@mixin for-mobile {
+    @include for-viewport-down(xs) {
+        @content;
+    }
+}
+
+// Mixin to apply styles to any viewport except mobile.
+@mixin for-not-mobile {
+    @include for-viewport-up(sm) {
+        @content;
+    }
+}
+
+// Mixin to apply styles to Internet Explorer.
+@mixin for-ie {
+    @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+// Mixin to apply styles to any browser except Internet Explorer.
+@mixin for-not-ie {
+    @supports not (-ms-high-contrast: none) {
+        @content;
+    }
+}

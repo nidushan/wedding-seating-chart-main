@@ -1,0 +1,151 @@
+@use 'sass:math';
+
+@import '../../Theme.scss';
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+    &.center {
+        margin: 0 auto;
+    }
+    &.row {
+        flex-direction: row;
+    }
+    &.col {
+        flex-direction: column;
+    }
+
+    @each $name, $size in $breakpoints-min {
+        @include for-viewport-up($name) {
+            &.#{$name}-wrap {
+                flex-wrap: wrap;
+            }
+            &.#{$name}-nowrap {
+                flex-wrap: nowrap;
+            }
+
+            &.row {
+                &.#{$name}-reverse {
+                    flex-direction: row-reverse;
+                }
+
+                &.#{$name}-x-begin {
+                    justify-content: flex-start;
+                }
+                &.#{$name}-x-center {
+                    justify-content: center;
+                }
+                &.#{$name}-x-end {
+                    justify-content: end;
+                }
+                &.#{$name}-y-begin {
+                    align-items: flex-start;
+                }
+                &.#{$name}-y-center {
+                    align-items: center;
+                }
+                &.#{$name}-y-end {
+                    align-items: flex-end;
+                }
+
+                > * {
+                    &.#{$name}-x-self-begin {
+                        margin-right: auto;
+                    }
+                    &.#{$name}-x-self-center {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    &.#{$name}-x-self-end {
+                        margin-left: auto;
+                    }
+                    &.#{$name}-y-self-begin {
+                        align-self: flex-start;
+                    }
+                    &.#{$name}-y-self-center {
+                        align-self: center;
+                    }
+                    &.#{$name}-y-self-end {
+                        align-self: flex-end;
+                    }
+
+                    @for $i from 1 through $grid-columns {
+                        &.#{$name}-#{$i} {
+                            flex-basis: math.div(100%, $grid-columns) * $i;
+                            max-width: math.div(100%, $grid-columns) * $i;
+                        }
+                    }
+                }
+            }
+
+            &.col {
+                &.#{$name}-reverse {
+                    flex-direction: column-reverse;
+                }
+
+                &.#{$name}-y-begin {
+                    justify-content: flex-start;
+                }
+                &.#{$name}-y-center {
+                    justify-content: center;
+                }
+                &.#{$name}-y-end {
+                    justify-content: end;
+                }
+                &.#{$name}-x-begin {
+                    align-items: flex-start;
+                }
+                &.#{$name}-x-center {
+                    align-items: center;
+                }
+                &.#{$name}-x-end {
+                    align-items: flex-end;
+                }
+
+                > * {
+                    &.#{$name}-y-self-begin {
+                        margin-bottom: auto;
+                    }
+                    &.#{$name}-y-self-center {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                    &.#{$name}-y-self-end {
+                        margin-top: auto;
+                    }
+                    &.#{$name}-x-self-begin {
+                        align-self: flex-start;
+                    }
+                    &.#{$name}-x-self-center {
+                        align-self: center;
+                    }
+                    &.#{$name}-x-self-end {
+                        align-self: flex-end;
+                    }
+                }
+            }
+
+            &.row, &.col {
+                > * {
+                    &.#{$name}-auto {
+                        flex: 0 0 auto;
+                    }
+                    &.#{$name}-grow {
+                        flex-grow: 1;
+                    }
+                    &.#{$name}-shrink {
+                        flex-shrink: 1;
+                    }
+                    &.#{$name}-flex-1 {
+                        flex: 1;
+                    }
+                    &.#{$name}-full {
+                        flex-basis: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

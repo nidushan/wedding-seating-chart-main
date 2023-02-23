@@ -1,0 +1,45 @@
+@import '../../Theme.scss';
+
+@mixin spacing($property, $size, $num, $direction) {
+    $space: calc(0.2rem * #{$num});
+    @if $direction == null {
+        .#{$size}-#{$property}-between-#{$num} > * {
+            #{$property}: $space;
+        }
+    } @else {
+        $first: left;
+        $last: right;
+        @if $direction == y {
+            $first: top;
+            $last: bottom;
+        }
+
+        .#{$size}-#{$direction}-#{$property}-between-#{$num} > * {
+            &:first-child {
+                #{$property}-#{$first}: 0;
+            }
+
+            &:last-child {
+                #{$property}-#{$last}: 0;
+            }
+
+            #{$property}-#{$first}: $space;
+            #{$property}-#{$last}: $space;
+        }
+    }
+}
+
+$properties: padding, margin;
+$directions: null, x, y;
+
+@each $name, $size in $breakpoints-min {
+    @include for-viewport-up($name) {
+        @for $i from 0 through 10 {
+            @each $property in $properties {
+                @each $direction in $directions {
+                    @include spacing($property, $name, $i, $direction);
+                }
+            }
+        }
+    }
+}

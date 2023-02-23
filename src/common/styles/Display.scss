@@ -1,0 +1,15 @@
+@use 'sass:math';
+
+@import '../../Theme.scss';
+
+$displays: block, inline-block, flex, none;
+
+@each $display in $displays {
+    @each $name, $size in $breakpoints-min {
+        @include for-viewport-up($name) {
+            .#{$name}-display-#{$display} {
+                display: $display !important;
+            }
+        } 
+    }
+}

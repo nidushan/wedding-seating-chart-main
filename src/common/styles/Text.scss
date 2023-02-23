@@ -1,0 +1,45 @@
+@import '../../Theme.scss';
+
+@each $i, $sizes in $font-sizes {
+    .is-size-#{$i} {
+        @include font-size($i);
+    }
+}
+
+@each $name, $weight in $font-weights {
+    .is-#{$name}-weight {
+        font-weight: $weight;
+    }
+}
+
+.is-italic {
+    font-style: italic;
+}
+
+.is-uppercase {
+    text-transform: uppercase;
+}
+
+.is-sentence {
+    text-transform: none;
+}
+
+.is-justified {
+    text-align: justify;
+}
+
+.is-center-aligned {
+    text-align: center;
+}
+
+.is-left-aligned {
+    text-align: left;
+}
+
+.is-right-aligned {
+    text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}

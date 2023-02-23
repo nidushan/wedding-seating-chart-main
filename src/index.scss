@@ -1,0 +1,41 @@
+@import 'Theme.scss';
+
+:root {
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+
+    @include set-theme-vars(dark);
+
+    background-color: theme-color-var(base);
+    color: theme-color-var(primary);
+
+    *::selection {
+        background: theme-color-var(selection);
+    }
+
+    .is-color-primary {
+        color: theme-color-var(primary);
+    }
+
+    .is-color-secondary {
+        color: theme-color-var(secondary);
+    }
+
+    .is-color-tertiary {
+        color: theme-color-var(tertiary);
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 280px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}

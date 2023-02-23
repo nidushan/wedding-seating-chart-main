@@ -1,0 +1,59 @@
+{
+    "lastName": "Smith",
+    "bride": "Jane",
+    "groom": "John",
+    "date": "08/05/2023",
+    "time": "7:00 pm",
+    "location": "New York City, NY",
+    "seatingChart": {
+        "Sweetheart": [
+            [
+                "Jane Smith",
+                "Jane Maiden",
+                "*Bride"
+            ],
+            [
+                "John Smith",
+                "*Groom"
+            ]
+        ],
+        "1": [
+            [
+                "Bob Johnson",
+                "*Best Man"
+            ],
+            [
+                "Olivia Brown",
+                "*Maid of Honor"
+            ],
+            "Jeremy Ty",
+            "Gabriel Santiago",
+            "Roland Price",
+            "Rebecca Price",
+            "Javier Ingram",
+            "Jessica Ingram"
+        ],
+        "2": [
+            [
+                "Jim Smith",
+                "*Father"
+            ],
+            [
+                "Jolene Smith",
+                "*Mother"
+            ],
+            [
+                "Josh Maiden",
+                "*Mother"
+            ],
+            [
+                "Jasmine Maiden",
+                "*Mother"
+            ],
+            "Lorene Silva",
+            "Lynne Lopez",
+            "Roland Brooks",
+            "Jeremy Maldonado"
+        ]
+    }
+}

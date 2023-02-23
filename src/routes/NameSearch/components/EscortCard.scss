@@ -1,0 +1,13 @@
+@import '../../../Theme.scss';
+
+.escort-card {
+    padding: 1rem;
+    border: 2px solid theme-color-var(secondary);
+    border-radius: 4px;
+    overflow-wrap: break-word;
+    
+    width: 75%;
+    @include for-mobile {
+        width: 100%;
+    }
+}
