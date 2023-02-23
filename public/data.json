@@ -1,32 +1,33 @@
 {
-    "lastName": "Smith",
-    "bride": "Jane",
-    "groom": "John",
+    "lastName1": "Jeevanesan",
+    "bride": "Neomi",
+    "groom": "Jonathan",
+	"lastName": "Thayaparan",
     "date": "08/05/2023",
-    "time": "7:00 pm",
-    "location": "New York City, NY",
+    "time": "5:00 pm",
+    "location": "Toronto, Canada",
     "seatingChart": {
         "Sweetheart": [
             [
-                "Jane Smith",
+                "Neomi Jeevanesan",
                 "Jane Maiden",
                 "*Bride"
             ],
             [
-                "John Smith",
+                "Jonathan Thayaparan",
                 "*Groom"
             ]
         ],
         "1": [
             [
-                "Bob Johnson",
+                "Jan Nidushan SInnadurai",
                 "*Best Man"
             ],
             [
                 "Olivia Brown",
                 "*Maid of Honor"
             ],
-            "Jeremy Ty",
+            "Annika Sinnadurai",
             "Gabriel Santiago",
             "Roland Price",
             "Rebecca Price",
@@ -39,7 +40,7 @@
                 "*Father"
             ],
             [
-                "Jolene Smith",
+                "Test mother1",
                 "*Mother"
             ],
             [
