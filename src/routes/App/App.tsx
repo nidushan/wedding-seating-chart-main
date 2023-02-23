@@ -38,7 +38,7 @@ function App(): JSX.Element {
     );
   } else {
     const {
-      bride, groom, lastName, date, time, location,lastName1,
+      bride, groom, lastName, date, time, location,
     } = data!;
     return (
       <div className="app is-center-aligned xs-y-margin-between-2">
