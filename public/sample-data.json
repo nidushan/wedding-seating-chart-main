@@ -1,19 +1,19 @@
 {
-    "lastName": "Smith",
-    "bride": "Jane",
-    "groom": "John",
-    "date": "05/21/2022",
-    "time": "7:00 pm",
-    "location": "New York City, NY",
+    "lastName": "Thayaparan",
+    "bride": "Neomi",
+    "groom": "Jonathan",
+    "date": "08/05/2022",
+    "time": "6:00 pm",
+    "location": "Toronto, Canada",
     "seatingChart": {
         "Sweetheart": [
             [
-                "Jane Smith",
-                "Jane Maiden",
+                "Neomi Thayaparan",
+                "Neomi Maiden",
                 "*Bride"
             ],
             [
-                "John Smith",
+                "Jonathan Thayaparan",
                 "*Groom"
             ]
         ],
