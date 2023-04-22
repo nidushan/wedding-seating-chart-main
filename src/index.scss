@@ -2,7 +2,6 @@
 
 :root {
     background-image: url("https://i.pinimg.com/originals/ad/9c/40/ad9c402ca2a5dbac1ce4ead1e5f0e1f9.png");
-    background-color: rgb(230, 39, 39);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 50% 90%;
@@ -46,4 +45,8 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 1.5rem;
+}
+
+.escort-card{
+    background-color: white;
 }
