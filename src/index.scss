@@ -7,7 +7,7 @@
     text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
 
-    @include set-theme-vars(dark);
+    @include set-theme-vars(light);
 
     background-color: theme-color-var(base);
     color: theme-color-var(primary);
