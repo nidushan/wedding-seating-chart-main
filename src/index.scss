@@ -52,6 +52,6 @@ body {
     background-color: theme-color-var(base);
 }
 
-h1{
-    font-family: 'Snell Roundhand', sans-serif;
+h1,h2,h3{
+    font-family: 'Snell Roundhand', sans-serif !important
 }
