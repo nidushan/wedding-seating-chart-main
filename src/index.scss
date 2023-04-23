@@ -67,3 +67,8 @@ h1,h2,h3{
     font-family: 'Snell Roundhand', sans-serif !important
 }
 
+.credits{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
