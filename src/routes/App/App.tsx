@@ -76,6 +76,9 @@ function App(): JSX.Element {
           </SeatingChartProvider>
         </div>
       </div>
+      <div>
+      <p>Made with ❤️ </i> by<a id="footerName" href="http://nidushan.com" target="_blank">nidushan</a></p>
+      </div>
     );
   }
 }
