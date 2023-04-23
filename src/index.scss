@@ -38,9 +38,9 @@
     }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (min-device-width: 900px) {
     :root{
-    background-image: url("https://i.pinimg.com/originals/ad/9c/40/ad9c402ca2a5dbac1ce4ead1e5f0e1f9.png");
+    background-image: url("https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 30% 40%;
