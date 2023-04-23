@@ -52,14 +52,15 @@ $font-weights: (
 // Font sizes.
 $font-sizes: (
     1: (6rem, 5rem),
-    2: (3.5rem, 2.8125rem),
-    3: (2.8125rem, 2.125rem),
-    4: (2.125rem, 1.5rem),
-    5: (1.5rem, 1.25rem),
-    6: (1.25rem, 1rem),
-    7: (1rem, 0.875rem),
-    8: (0.875rem, 0.75rem),
-    9: (0.75rem, 0.625rem)
+    2: (5rem, 4rem),
+    3: (3.5rem, 2.8125rem),
+    4: (2.8125rem, 2.125rem),
+    5: (2.125rem, 1.5rem),
+    6: (1.5rem, 1.25rem),
+    7: (1.25rem, 1rem),
+    8: (1rem, 0.875rem),
+    9: (0.875rem, 0.75rem),
+    10: (0.75rem, 0.625rem)
 );
 
 // Function for getting a font size. Use font-size mixin instead.
