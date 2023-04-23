@@ -75,7 +75,6 @@ function App(): JSX.Element {
             </BrowserRouter>
           </SeatingChartProvider>
         </div>
-        <p>Made with ❤️ </i> by<a id="footerName" href="http://nidushan.com" target="_blank">nidushan</a></p>
       </div>
     );
   }
