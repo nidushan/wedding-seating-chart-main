@@ -1,19 +1,9 @@
 # Wedding Seating Chart
 
-This repository features the source code for simple web application for guests to receive a digital escort card (table number) for a wedding. I used it for my wedding, which took place on June 11, 2022.
+This repository features the source code for simple web application for guests to receive a digital escort card (table number) for a wedding.
 
 ## About
 This web application was created using **React**, **TypeScript**, and **SCSS**.
-
-## Deploying
-It is extremely simple to adapt this web application to your wedding. All of the data displayed is contained within a single JSON file, which is fetched by the client. This JSON file may be hosted on the same static server as this website, or it may be fetched from an external site. The environment variable `REACT_APP_DATA_URL` contains the URL to fetch the JSON file from.
-
-1. Clone this repository.
-1. Create your JSON file. See [below](#wedding-data-format) for how this file should be formatted.
-1. Update the `.env` file to set `REACT_APP_DATA_URL` to the location of your JSON file in testing. See [below](#hosting-your-data) for hosting options.
-1. Use `npm run start` to test your application locally.
-1. Use `npm run build` to build your application for production. In the build environment, make sure `REACT_APP_DATA_URL` is set to its proper value.
-1. Host your build output statically to make it accessible to guests.
 
 ## Wedding Data Format
 Your JSON file should follow the structure given by the [sample data file](./public/sample-data.json). Below are explanations of each field:
@@ -31,19 +21,6 @@ The value of `seatingChart[key]` must be an array. Each element in the array rep
 * `string`: The single name of the guest. Most guests can be represented this way.
 * `string[]`: An array of multiple names the guest may go by. If a guest has multiple names that you want to be accessible in the application, they should all be listed here. Note that the first name in the array will always be displayed on the escort card.
     * Furthermore, tags or roles may be added to this array. Tags are designated with an asterisk at the beginning (for instance, `"*Best Man"` or `"*Mother"`). Tags are explained [below](#searching).
-
-## Hosting Your Data
-Your JSON data can be hosted one of two ways:
-
-### Locally
-Store your JSON file in the [`public/`](/public) folder. When the React application is built, the JSON file will be bundled in the build output folder and hosted on the same static server as the rest of the appliation.
-
-Set `REACT_APP_DATA_URL=./[file name].json` in your `.env` file and when building the application.
-
-### Externally
-Host your JSON file on some external site.
-
-Set `REACT_APP_DATA_URL` to the external URL where your JSON file may be found in your `.env` file and when building the application.
 
 ## Searching
 Searching is the process by which guests find their escort card. Searching is case-insensitive and designed to be as simple as possible.
