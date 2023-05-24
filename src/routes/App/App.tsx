@@ -45,7 +45,6 @@ function App(): JSX.Element {
         <h1 className="is-size-3 is-regular-weight">Wedding Seating Chart</h1>
         <h2 className="is-size-4 is-color-secondary is-italic is-light-weight">
           {bride}
-          {' Jeevanesan '}
           and
           {' '}
           {groom}
