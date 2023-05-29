@@ -42,7 +42,29 @@ function App(): JSX.Element {
     } = data!;
     return (
       <div className="app is-center-aligned xs-y-margin-between-2">
-        <img src="https://i.ibb.co/QJx1jj0/Seating-Chart-Text.png"></img>
+        <h1 className="is-size-3 is-regular-weight">Wedding Seating Chart</h1>
+        <h2 className="is-size-4 is-color-secondary is-italic is-light-weight">
+          {bride}
+          {' '}
+          &
+          {' '}
+          {groom}
+          {' '}
+          {lastName}
+        </h2>
+        <h3 className="is-size-5 is-color-secondary is-italic is-light-weight">
+          {new Date(`${date} ${time}`).toLocaleString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+          })}
+        </h3>
+        <h3 className="is-size-5 is-color-secondary is-italic is-light-weight">
+          {location}
+        </h3>
         <div className="content">
           <SeatingChartProvider data={data?.seatingChart}>
             <BrowserRouter>
