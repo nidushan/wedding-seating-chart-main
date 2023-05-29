@@ -74,7 +74,7 @@ h1,h2,h3{
 
 .name{
     font-family: 'Mango' !important;
-    color: #c49a6c;
+    color: theme-color-var(darkbeige);
 }
 
 .table-text{
@@ -107,17 +107,17 @@ h1,h2,h3{
 }
 
 input [type=text]{
-    border: 2px solid #f4eae0;
-    color: #c49a6c;
+    border: 2px solid theme-color-var(lightbeige);
+    color: theme-color-var(darkbeige);
 }
 
 input[type=text]:focus {
-    border: 2px solid #f4eae0;
-    color: #c49a6c;
+    border: 2px solid theme-color-var(lightbeige);
+    color: theme-color-var(darkbeige);
   }
 
 ::placeholder{
-    color: #c49a6c;
+    color: theme-color-var(darkbeige);
 }
 
 

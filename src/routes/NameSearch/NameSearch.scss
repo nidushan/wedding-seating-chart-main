@@ -7,7 +7,7 @@
         background-color: theme-color-var(base);
         outline: none;
         /*border: 2px solid theme-color-var(tertiary);*/
-        border: 2px solid #c49a6c;
+        border: 2px solid theme-color-var(darkbeige);
         border-radius: 4px;
         padding: 1rem;
         font-family: inherit;
@@ -17,7 +17,7 @@
 
         &:focus, &:active {
             /*border-color: theme-color-var(secondary);*/
-            border-color:#c49a6c;
+            border-color:theme-color-var(darkbeige);
         }
     }
 
@@ -26,7 +26,7 @@
         background-color: theme-color-var(base);
         border: none;
         outline: none;
-        box-shadow: 0px 0px 0px 2px #c49a6c;
+        box-shadow: 0px 0px 0px 2px theme-color-var(darkbeige);
         /*box-shadow: 0px 0px 0px 2px theme-color-var(tertiary);*/
         transition: box-shadow 0.6s linear;
         border-radius: 4px;
@@ -66,7 +66,7 @@
     hr {
         border: none;
         /*background-color: theme-color-var(tertiary);*/
-        background-color: #f4eae0;
+        background-color: theme-color-var(lightbeige);
         height: 2px;
     }
 }
