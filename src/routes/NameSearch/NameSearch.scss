@@ -7,7 +7,7 @@
         background-color: theme-color-var(base);
         outline: none;
         /*border: 2px solid theme-color-var(tertiary);*/
-        border: 2px solid #f4eae0;
+        border: 2px solid #c49a6c;
         border-radius: 4px;
         padding: 1rem;
         font-family: inherit;
@@ -17,7 +17,7 @@
 
         &:focus, &:active {
             /*border-color: theme-color-var(secondary);*/
-            border-color:#c49a6c;
+            border-color:#f4eae0;
         }
     }
 
