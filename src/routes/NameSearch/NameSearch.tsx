@@ -81,7 +81,7 @@ function NameSearch() {
         className="flex col xs-x-center xs-y-margin-between-4"
         onSubmit={(event) => onSubmit(event, hooks, service)}
       >
-        <p className="is-size-5 is-color-secondary">Enter your name to get your table number!</p>
+        <p className="is-size-5 is-color-secondary"></p>
         <input
           className="name-input
           is-size-4
