@@ -121,9 +121,13 @@ h1,h2,h3{
     letter-spacing: .2rem;
 }
 
-input{
+input [type=text]{
     border: 2px solid #f4eae0;
 }
+
+input[type=text]:focus {
+    border: 2px solid #f4eae0;
+  }
 
 ::placeholder{
     color: #c49a6c;
