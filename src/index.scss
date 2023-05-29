@@ -52,6 +52,13 @@
     background-size: 150px 200px;
     /*background-size: 30% 20%;*/
     }
+    #wIMG{
+        width: 300px;
+        height: auto;
+    }
+    input{
+       font-size: 0.9rem; 
+    }
   }
 
   
@@ -108,12 +115,6 @@ h1,h2,h3{
     height: auto;
 }
 
-@media only screen and (max-device-width: 1000px) {
-    #wIMG{
-        width: 300px;
-        height: auto;
-    }
-  }
 
 .name-input{
     font-family: 'Lora', serif !important;
