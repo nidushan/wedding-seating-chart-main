@@ -129,6 +129,9 @@ input[type=text]:focus {
     border: 2px solid #f4eae0;
   }
 
+  input, select, textarea{
+    color: #c49a6c;
+}
 ::placeholder{
     color: #c49a6c;
 }
