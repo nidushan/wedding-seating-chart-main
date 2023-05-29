@@ -123,15 +123,14 @@ h1,h2,h3{
 
 input [type=text]{
     border: 2px solid #f4eae0;
+    color: #c49a6c;
 }
 
 input[type=text]:focus {
     border: 2px solid #f4eae0;
+    color: #c49a6c;
   }
 
-input, select, textarea{
-    color: #c49a6c;
-}
 ::placeholder{
     color: #c49a6c;
 }
