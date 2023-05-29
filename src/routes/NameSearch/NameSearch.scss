@@ -17,7 +17,7 @@
 
         &:focus, &:active {
             /*border-color: theme-color-var(secondary);*/
-            border-color:#f4eae0;
+            border-color:#c49a6c;
         }
     }
 
@@ -26,7 +26,8 @@
         background-color: theme-color-var(base);
         border: none;
         outline: none;
-        box-shadow: 0px 0px 0px 2px theme-color-var(tertiary);
+        box-shadow: 0px 0px 0px 2px #c49a6c;
+        /*box-shadow: 0px 0px 0px 2px theme-color-var(tertiary);*/
         transition: box-shadow 0.6s linear;
         border-radius: 4px;
         cursor: pointer;
