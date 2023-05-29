@@ -1,5 +1,9 @@
 @import 'Theme.scss';
 @import url('https://fonts.cdnfonts.com/css/snell-roundhand');
+@font-face {
+    font-family: myFirstFont;
+    src: url("https://nidushan.com/font/Lora_Regular.ttf");
+ }
 
 :root {
     background-image: url("https://i.imgur.com/0UCQH0S.png");
@@ -73,4 +77,8 @@ h1,h2,h3{
     align-items: center;
     text-align: center;
     padding: 10px 0;
+}
+
+.name{
+    font-family: myFirstFont;
 }
