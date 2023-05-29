@@ -81,16 +81,20 @@ h1,h2,h3{
 }
 
 .name{
-    font-family: 'Mango' !important
+    font-family: 'Mango' !important;
+    color: #c49a6c;
 }
 
 .table-text{
     font-family: 'Lora', serif !important; 
     text-transform: uppercase !important;
     letter-spacing: .2rem;
+    color: black;
+
 }
 
 .table-number{
+    color: black;
 
 }
 .hide{
