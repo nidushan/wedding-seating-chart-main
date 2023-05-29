@@ -18,9 +18,9 @@ function EscortCard({name, table}: EscortCardParams): JSX.Element {
 
   return (
     <div className="escort-card xs-y-margin-between-8">
-      <p className="name is-italic is-size-3">{name}</p>
+      <p className="name is-size-3">{name}</p>
       <div className="table-info">
-        <p className="table-text is-italic is-size-8">Table</p>
+        <p className="table-text is-size-8">Table</p>
         <p className={`table-number is-size-${tableTextSize}`}>{table}</p>
       </div>
     </div>
