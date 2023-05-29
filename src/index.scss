@@ -120,10 +120,11 @@ h1,h2,h3{
     text-transform: uppercase !important;
     letter-spacing: .2rem;
 }
-::placeholder{
-    color: #f4eae0;
-}
 
 input{
-    border: 2px solid #c49a6c;
+    border: 2px solid #f4eae0;
+}
+
+::placeholder{
+    color: #c49a6c;
 }
