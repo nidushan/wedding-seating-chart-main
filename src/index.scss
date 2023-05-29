@@ -85,7 +85,8 @@ h1,h2,h3{
 }
 
 .table-text{
-    font-family: 'Lora', serif;
+    font-family: 'Lora', serif !important; 
+    text-transform: capitalize;
 }
 
 .table-number{
