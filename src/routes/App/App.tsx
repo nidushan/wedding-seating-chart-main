@@ -41,7 +41,8 @@ function App(): JSX.Element {
       bride, groom, lastName, date, time, location,
     } = data!;
     return (
-      <div className="app is-center-aligned xs-y-margin-between-2 hide">
+      <div className="app is-center-aligned xs-y-margin-between-2">
+        <div className="hide">
         <h1 className="is-size-3 is-regular-weight">Wedding Seating Chart</h1>
         <h2 className="is-size-4 is-color-secondary is-italic is-light-weight">
           {bride}
@@ -65,6 +66,7 @@ function App(): JSX.Element {
         <h3 className="is-size-5 is-color-secondary is-italic is-light-weight">
           {location}
         </h3>
+        </div>
         <div className="content">
           <img src="https://i.ibb.co/QJx1jj0/Seating-Chart-Text.png" alt="Image" />
           <SeatingChartProvider data={data?.seatingChart}>
