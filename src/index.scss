@@ -44,22 +44,6 @@
     }
 }
 
-@media only screen and (max-device-width: 1000px) {
-    :root{
-    background-image: url("https://i.imgur.com/0UCQH0S.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 150px 200px;
-    /*background-size: 30% 20%;*/
-    }
-    #wIMG{
-        width: 300px;
-        height: auto;
-    }
-    input{
-       font-size: 0.9rem; 
-    }
-  }
 
   
 *, *::before, *::after {
@@ -135,3 +119,21 @@ input[type=text]:focus {
 ::placeholder{
     color: #c49a6c;
 }
+
+
+@media only screen and (max-device-width: 1000px) {
+    :root{
+    background-image: url("https://i.imgur.com/0UCQH0S.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 150px 200px;
+    /*background-size: 30% 20%;*/
+    }
+    #wIMG{
+        width: 300px;
+        height: auto;
+    }
+    input{
+       font-size: 0.9rem; 
+    }
+  }
