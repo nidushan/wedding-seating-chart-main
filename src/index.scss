@@ -13,12 +13,14 @@
     background-size: 20% 60%;
     /*30% 80%*/
     /*Nice corner flower: https://i.pinimg.com/originals/ad/9c/40/ad9c402ca2a5dbac1ce4ead1e5f0e1f9.png
-    Pink Wallpaper corner: https://thumbnails.production.thenounproject.com/e-3LvRIVysDS343teZDVResBuHA=/fit-in/1000x1000/photos.production.thenounproject.com/photos/E3DE3D3A-341F-4629-A1ED-BCAF80AF7F0B.jpg*/
+    Pink Wallpaper corner: https://thumbnails.production.thenounproject.com/e-3LvRIVysDS343teZDVResBuHA=/fit-in/1000x1000/photos.production.thenounproject.com/photos/E3DE3D3A-341F-4629-A1ED-BCAF80AF7F0B.jpg
+    */
     font-size: 16px;
     font-family: 'Cormorant Garamond', serif;
     text-rendering: optimizeLegibility;
     text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
+    border: solid 8px #c49a6c;
 
     @include set-theme-vars(light);
 
