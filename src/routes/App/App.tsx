@@ -42,7 +42,6 @@ function App(): JSX.Element {
     } = data!;
     return (
       <div className="app is-center-aligned xs-y-margin-between-2">
-        <div className="hide">
         <h1 className="is-size-3 is-regular-weight">Wedding Seating Chart</h1>
         <h2 className="is-size-4 is-color-secondary is-italic is-light-weight">
           {bride}
@@ -66,8 +65,6 @@ function App(): JSX.Element {
         <h3 className="is-size-5 is-color-secondary is-italic is-light-weight">
           {location}
         </h3>
-        </div>
-        <img src="https://i.ibb.co/QJx1jj0/Seating-Chart-Text.png"></img>
         <div className="content">
           <SeatingChartProvider data={data?.seatingChart}>
             <BrowserRouter>
