@@ -90,7 +90,7 @@ function NameSearch() {
           type="text"
           value={state.name}
           onChange={(event) => setState({...state, name: event.target.value})}
-          placeholder="First name or Last name"
+          placeholder="FIRST OR LAST NAME"
         />
         <button type="submit" className="name-submit is-size-5 xs-x-self-center">🔍</button>
         {!state.initial && Object.keys(state.tables).length !== 0 ? (
