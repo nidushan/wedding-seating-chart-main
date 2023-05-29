@@ -16,7 +16,8 @@
         transition-property: border-color;
 
         &:focus, &:active {
-            border-color: theme-color-var(secondary);
+            /*border-color: theme-color-var(secondary);*/
+            border-color:#c49a6c;
         }
     }
 
