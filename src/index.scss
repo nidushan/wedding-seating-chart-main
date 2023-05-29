@@ -1,5 +1,6 @@
 @import 'Theme.scss';
 @import url('https://fonts.cdnfonts.com/css/snell-roundhand');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @font-face {
     font-family: "myFirstFont";
     src: url("https://nidushan.com/font/Black-Mango-Medium.woff") format('woff');;
@@ -81,4 +82,12 @@ h1,h2,h3{
 
 .name{
     font-family: 'Snell Roundhand', sans-serif !important
+}
+
+.table-text{
+    font-family: 'Lora', serif;
+}
+
+.table-number{
+
 }
