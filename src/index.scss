@@ -133,7 +133,7 @@ input[type=text]:focus {
         width: 300px;
         height: auto;
     }
-    input{
-       font-size: 0.9rem; 
-    }
+    input.is-size-4{
+    font-size: 0.9rem !important;
+}
   }
