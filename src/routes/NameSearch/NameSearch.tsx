@@ -45,15 +45,6 @@ function onSubmit(
   searchForName(hooks.state.name, hooks, service);
 }
 
-function onRandomTagClick(
-  event: MouseEvent<HTMLElement>,
-  hooks: NameSearchHooks,
-  service: SeatingChartService,
-) {
-  const randomTag = service.getRandomTag();
-  searchForName(randomTag, hooks, service);
-}
-
 function NameSearch() {
   const service = useSeatingChart();
   const [searchParams, setSearchParams] = useSearchParams();
