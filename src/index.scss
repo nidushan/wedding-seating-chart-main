@@ -120,6 +120,14 @@ input[type=text]:focus {
     color: theme-color-var(darkbeige);
 }
 
+.border{
+    border: solid 8px theme-color-var(darkbeige);
+}
+
+.contentBorder{
+    width: 100%;
+    padding: 20px 20px;
+}
 
 @media only screen and (max-device-width: 1000px) {
     :root{
