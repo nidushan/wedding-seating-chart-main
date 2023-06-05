@@ -96,7 +96,7 @@ function NameSearch() {
         {!state.initial && Object.keys(state.tables).length !== 0 ? (
           <button
             type="button"
-            className="random is-size-8"
+            className="random is-size-8 hide"
             onClick={(event) => onRandomTagClick(event, hooks, service)}
           >
             {'I\'m Feeling Lucky'}
