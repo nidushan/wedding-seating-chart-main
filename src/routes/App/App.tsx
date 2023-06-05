@@ -68,8 +68,8 @@ function App(): JSX.Element {
           </h3>
         </div>
         <div className="content">
-          <a href="#">
-            <img id="wIMG" src="https://imgur.com/a/wyhnz2B" alt="Image" />
+          <a href="https://wsc.jonathanfoundhisjeevan.com/">
+            <img id="wIMG" src="https://i.imgur.com/1Zk6P8z.png" alt="Image" />
           </a>
           <SeatingChartProvider data={data?.seatingChart}>
             <BrowserRouter>
