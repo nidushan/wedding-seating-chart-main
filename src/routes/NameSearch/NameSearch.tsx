@@ -93,15 +93,6 @@ function NameSearch() {
           placeholder="FIRST OR LAST NAME"
         />
         <button type="submit" className="name-submit is-size-5 xs-x-self-center">🔍</button>
-        {!state.initial && Object.keys(state.tables).length !== 0 ? (
-          <button
-            type="button"
-            className="random is-size-8"
-            onClick={(event) => onRandomTagClick(event, hooks, service)}
-          >
-            {'I\'m Feeling Lucky'}
-          </button>
-        ) : undefined}
 
       </form>
       <hr />
