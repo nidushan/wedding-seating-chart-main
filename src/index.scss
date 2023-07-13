@@ -7,7 +7,8 @@
   }
 
 :root {
-    background-image: url("https://i.imgur.com/crKpCYl.png");
+    background-image: url("https://i.imgur.com/crKpCYl.png"),url("https://i.imgur.com/crKpCYl.png");
+    background-position: left top, right top;
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 20% 60%;
