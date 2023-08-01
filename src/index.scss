@@ -7,11 +7,11 @@
   }
 
 :root {
-    background-image: url("https://i.imgur.com/crKpCYl.png"),url("https://i.imgur.com/154HbQt.png");
+    background-image: url("https://i.imgur.com/crKpCYl.png"),url("https://i.imgur.com/v5OuMaR.png");
     background-position: left top, right top;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: 30% 80%;
+    background-size: 30% 70%;
     /*30% 80%*/
     /*Nice corner flower: https://i.pinimg.com/originals/ad/9c/40/ad9c402ca2a5dbac1ce4ead1e5f0e1f9.png
     https://i.imgur.com/154HbQt.png //Flipped flower
@@ -124,7 +124,7 @@ input[type=text]:focus {
 
 @media only screen and (max-device-width: 1000px) {
     :root{
-    background-image: url("https://i.imgur.com/crKpCYl.png"),url("https://i.imgur.com/154HbQt.png");
+    background-image: url("https://i.imgur.com/crKpCYl.png"),url("https://i.imgur.com/v5OuMaR.png");
     background-position: left top, right top;
     background-repeat: no-repeat;
     background-attachment: fixed; 
