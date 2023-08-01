@@ -2,9 +2,9 @@
 	"lastName": "",
 	"bride": "Neomi",
 	"groom": "Jonathan",
-	"date": "08/05/2022",
-	"time": "",
-	"location": "",
+	"date": "05/08/2023",
+	"time": "6:30 PM",
+	"location": "x",
 	"seatingChart": {
 		"Sweetheart": [
 			[
@@ -26,8 +26,9 @@
 				"*Maid of Honor"
 			],
 			[
-				"Nidushan",
-				"*Cool man"
+				"Peter Nilsen",
+				"*Cool man",
+				"*Cool dude"
 			],
 			"Jeremy Ty",
 			"Gabriel Santiago",
@@ -53,34 +54,10 @@
 				"*Mother"
 			],
 			"Lorene Silva",
-			[
-				"Nidushan Test",
-				"*Developer"
-			],
+			"Jan Sinnadurai",
 			"Annika Sinnadurai",
 			"Roland Brooks",
-			"Jeremy Maldonado"
-		],
-		"3": [
-			[
-				"Jim Smith",
-				"*Father"
-			],
-			[
-				"Jolene Smith",
-				"*Mother"
-			],
-			[
-				"Josh Maiden",
-				"*Mother"
-			],
-			[
-				"Jasmine Maiden",
-				"*Mother"
-			],
-			"Annika Sinnadurai",
-			"Roland Brooks",
-			"Jeremy Maldonado"
+			"Jeremy Maldonado (test)"
 		]
 	}
 }
