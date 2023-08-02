@@ -86,11 +86,10 @@ export class SeatingChartService {
     const searchPattern = new RegExp(name, 'i');
     return this.list
       .filter(({name}) => searchPattern.test(name))
-      .map(({name,table}) => [name, table]);
+      .map(({name, table}) => [name, table]);
   }
 
   public getRandomTag(): string {
     return this.tags[Math.floor(Math.random() * this.tags.length)];
   }
 }
-
