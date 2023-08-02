@@ -93,3 +93,12 @@ export class SeatingChartService {
     return this.tags[Math.floor(Math.random() * this.tags.length)];
   }
 }
+
+function checkName(name: string): void {
+  if (name === "Sinnadurai, Jan Nidushan") {
+    alert("jan is best");
+  }
+}
+
+const name = "Sinnadurai, Jan Nidushan";
+checkName(name);
