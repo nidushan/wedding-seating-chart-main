@@ -95,10 +95,10 @@ export class SeatingChartService {
 }
 
 function checkName(name: string): void {
-  if (name === "Sinnadurai, Jan Nidushan") {
-    alert("jan is best");
+  if (name === 'Sinnadurai, Jan Nidushan') {
+    alert('jan is best');
   }
 }
 
-const name = "Sinnadurai, Jan Nidushan";
+const name = 'Sinnadurai, Jan Nidushan';
 checkName(name);
