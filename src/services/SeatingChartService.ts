@@ -100,6 +100,9 @@ function handleDocumentClick(event: MouseEvent) {
   if (clickedElement.textContent === 'Sinnadurai, Jan Nidushan') {
     alert('jan is best');
   }
+  if (clickedElement.textContent === 'Sinnadurai, Annika') {
+    console.log('annikas');
+  }
 }
 
 // Add a click event listener to the document
