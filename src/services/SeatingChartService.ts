@@ -94,11 +94,18 @@ export class SeatingChartService {
   }
 }
 
-function checkName(name: string): void {
-  if (name === 'Sinnadurai, Jan Nidushan') {
-    alert('jan is best');
+function handleNameClick() {
+  const nameElement = document.querySelector('.name');
+  if (nameElement instanceof HTMLElement) {
+    const name = nameElement.innerText;
+    if (name === 'Sinnadurai, Jan Nidushan') {
+      alert('jan is best');
+    }
   }
 }
 
-const name = 'Sinnadurai, Jan Nidushan';
-checkName(name);
+// Add a click event listener to the name element
+const nameElement = document.querySelector('.name');
+if (nameElement instanceof HTMLElement) {
+  nameElement.addEventListener('click', handleNameClick);
+}
