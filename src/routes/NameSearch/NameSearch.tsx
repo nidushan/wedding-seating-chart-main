@@ -63,7 +63,7 @@ function NameSearch() {
     if (state.name) {
       searchForName(state.name, hooks, service);
     }
-  }, [state.name]); // Add state.name as a dependency to trigger the search on input change
+  }, []); // Add state.name as a dependency to trigger the search on input change
 
   return (
     <div className="name-search xs-y-margin-between-10">
