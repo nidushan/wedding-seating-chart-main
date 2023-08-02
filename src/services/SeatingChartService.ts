@@ -101,7 +101,7 @@ function handleDocumentClick(event: MouseEvent) {
     alert('jan is best');
   }
   if (clickedElement.textContent === 'Sinnadurai, Annika') {
-    console.log('annikas');
+    alert('Test');
   }
 }
 
