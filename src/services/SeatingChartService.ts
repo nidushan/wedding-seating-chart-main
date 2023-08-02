@@ -100,7 +100,7 @@ function handleDocumentClick(event: MouseEvent) {
   if (clickedElement.textContent === 'Sinnadurai, Jan Nidushan') {
     alert('jan is best');
   }
-  if (clickedElement.textContent === 'Sinnadurai, Annika') {
+  if (clickedElement.textContent === 'Sinnadurai, AnnikaX') {
     alert('Test');
   }
 }
