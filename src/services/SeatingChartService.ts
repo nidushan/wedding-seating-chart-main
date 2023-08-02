@@ -85,8 +85,8 @@ export class SeatingChartService {
     // Search for names that contain the given name as a substring (case-insensitive)
     const searchPattern = new RegExp(name, 'i');
     return this.list
-      .filter(({ name }) => searchPattern.test(name))
-      .map(({ name, table }) => [name, table]);
+      .filter(({name}) => searchPattern.test(name))
+      .map(({name,table}) => [name, table]);
   }
 
   public getRandomTag(): string {
