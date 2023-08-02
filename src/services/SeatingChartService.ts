@@ -94,18 +94,13 @@ export class SeatingChartService {
   }
 }
 
-function handleNameClick() {
-  const nameElement = document.querySelector('.name');
-  if (nameElement instanceof HTMLElement) {
-    const name = nameElement.innerText;
-    if (name === 'Sinnadurai, Jan Nidushan') {
-      alert('jan is best');
-    }
+// Function to handle the click event on the document
+function handleDocumentClick(event: MouseEvent) {
+  const clickedElement = event.target as HTMLElement;
+  if (clickedElement.textContent === 'Sinnadurai, Jan Nidushan') {
+    alert('jan is best');
   }
 }
 
-// Add a click event listener to the name element
-const nameElement = document.querySelector('.name');
-if (nameElement instanceof HTMLElement) {
-  nameElement.addEventListener('click', handleNameClick);
-}
+// Add a click event listener to the document
+document.addEventListener('click', handleDocumentClick);
