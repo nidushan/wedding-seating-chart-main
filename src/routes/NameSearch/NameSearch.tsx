@@ -26,7 +26,7 @@ function searchForName(
   service: SeatingChartService,
 ) {
   setSearchParams({q: name}, {replace: true});
-  const tables = service.getTable(name.trim());
+  const tables = service.getTablePartial(name.trim()); // Use getTablePartial for partial name match
   setState({
     ...state,
     name,
