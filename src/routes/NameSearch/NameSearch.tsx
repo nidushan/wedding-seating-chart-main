@@ -1,26 +1,31 @@
 import './NameSearch.scss';
-import EscortCard from './components/EscortCard';
-import { ReactHooks } from '../../hooks';
-import { SeatingChartService } from '../../services/SeatingChartService';
-import { useSearchParams } from 'react-router-dom';
-import { useSeatingChart } from '../../context/SeatingChart';
 
-import React, { FormEvent, useEffect, useState } from 'react';
+import EscortCard from './components/EscortCard';
+import {ReactHooks} from '../../hooks';
+import {SeatingChartService} from '../../services/SeatingChartService';
+import {useSearchParams} from 'react-router-dom';
+import {useSeatingChart} from '../../context/SeatingChart';
+
+import React, {
+  FormEvent,
+  useEffect,
+  useState,
+} from 'react';
 
 interface NameSearchState {
-  name: string;
-  initial: boolean;
-  tables: [string, string][];
+  name: string,
+  initial: boolean,
+  tables: [string, string][],
 }
 
 type NameSearchHooks = ReactHooks<NameSearchState, 'setState' | 'searchParams' | 'setSearchParams'>;
 
 function searchForName(
   name: string,
-  { state, setState, setSearchParams }: NameSearchHooks,
+  {state, setState, setSearchParams}: NameSearchHooks,
   service: SeatingChartService,
 ) {
-  setSearchParams({ q: name }, { replace: true });
+  setSearchParams({q: name}, {replace: true});
   const tables = service.getTable(name.trim());
   setState({
     ...state,
@@ -68,26 +73,39 @@ function NameSearch() {
       >
         <p className="is-size-5 is-color-secondary"> </p>
         <input
-          className="name-input is-size-4 is-color-primary is-center-aligned"
+          className="name-input
+          is-size-4
+          is-color-primary
+          is-center-aligned"
           type="text"
           value={state.name}
-          onChange={(event) => setState({ ...state, name: event.target.value })}
+          onChange={(event) => setState({...state, name: event.target.value})}
           placeholder="FIRST OR LAST NAME"
         />
         <button type="submit" className="name-submit is-size-5 xs-x-self-center">🔍</button>
+
       </form>
       <hr />
-      {!state.initial && (
+      {state.initial ? undefined : (
         <div className="results">
-          {state.tables.length === 0 ? (
-            <p className="is-size-5">No results!</p>
-          ) : (
-            <div className="results flex col xs-x-center xs-y-margin-between-5">
-              {state.tables.map(([name, table]) => (
-                <EscortCard key={name} name={name} table={table} />
-              ))}
-            </div>
-          )}
+          {(() => {
+            if (state.tables.length === 0) {
+              return (<p className="is-size-5">No results!</p>);
+            } else {
+              return (
+                <div className="results flex col xs-x-center xs-y-margin-between-5">
+                  {state.tables.map(([name, table]) => (
+                    <EscortCard
+                      key={name}
+                      name={name}
+                      table={table}
+                    />
+                  ))}
+                </div>
+              );
+            }
+          })()}
+
         </div>
       )}
     </div>
